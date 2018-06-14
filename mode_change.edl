@@ -1,0 +1,584 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2052
+y 721
+w 495
+h 850
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 495
+h 853
+lineColor index 11
+fill
+fillColor index 11
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 684
+w 160
+h 160
+lineColor index 28
+fill
+fillColor index 28
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 364
+w 160
+h 160
+lineColor index 38
+fill
+fillColor index 38
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 165
+y 444
+w 160
+h 80
+fgColor index 14
+bgColor index 38
+topShadowColor index 35
+botShadowColor index 35
+font "helvetica-bold-r-18.0"
+buttonLabel "Pin Hand Mount"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Pin hand_mount"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 165
+y 364
+w 160
+h 80
+fgColor index 14
+bgColor index 38
+topShadowColor index 35
+botShadowColor index 35
+font "helvetica-bold-r-18.0"
+buttonLabel "Pin Data Collect"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Pin data_collection"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 145
+y 764
+w 180
+h 80
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-18.0"
+buttonLabel "Tray Data Collect"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Tray data_collection"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 145
+y 684
+w 180
+h 80
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-18.0"
+buttonLabel "Tray Hand Mount"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Tray hand_mount"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 325
+y 524
+w 160
+h 80
+fgColor index 14
+bgColor index 38
+topShadowColor index 35
+botShadowColor index 35
+font "helvetica-bold-r-18.0"
+buttonLabel "Switch To Pin"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Pin switch"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 325
+y 604
+w 160
+h 80
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-18.0"
+buttonLabel "Switch to Tray"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Tray switch"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 365
+y 427
+w 80
+h 27
+controlPv "BL24I-MO-PTAB-01:Y.RBV"
+format "float"
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+autoHeight
+precision 0
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 363
+y 756
+w 80
+h 27
+controlPv "BL24I-MO-TTAB-01:X.RBV"
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 38
+bgColor index 28
+autoHeight
+precision 0
+fieldLen "4"
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 0
+w 160
+h 80
+fgColor index 14
+fgAlarm
+bgColor index 41
+inconsistentColor index 14
+topShadowColor index 40
+botShadowColor index 40
+controlPv "BL24I-MO-CSTRM-01:MP:SELECT"
+font "helvetica-bold-r-18.0"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 165
+y 0
+w 160
+h 80
+fgColor index 14
+bgColor index 41
+topShadowColor index 40
+botShadowColor index 40
+font "helvetica-bold-r-18.0"
+buttonLabel "Goto Manual"
+numCmds 1
+command {
+  0 "caput BL24I-MO-CSTRM-01:P1701 0"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 5
+y 0
+w 160
+h 80
+fgColor index 14
+bgColor index 41
+topShadowColor index 40
+botShadowColor index 40
+font "helvetica-bold-r-18.0"
+buttonLabel "Goto Auto"
+numCmds 1
+command {
+  0 "caput BL24I-MO-CSTRM-01:P1701 1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 165
+y 0
+w 160
+h 80
+lineColor index 40
+fill
+fillColor index 41
+visPv "BL24I-MO-CSTRM-01:P1701:RBV"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 0
+w 160
+h 80
+lineColor index 40
+fill
+fillColor index 41
+visPv "BL24I-MO-CSTRM-01:P1701:RBV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 245
+y 186
+w 160
+h 80
+fgColor index 14
+bgColor index 52
+topShadowColor index 51
+botShadowColor index 51
+font "helvetica-bold-r-18.0"
+buttonLabel "Backlight In"
+numCmds 1
+command {
+  0 "caput BL24I-MO-BL-01:MP:SELECT In"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 85
+y 186
+w 160
+h 80
+fgColor index 14
+bgColor index 52
+topShadowColor index 51
+botShadowColor index 51
+font "helvetica-bold-r-18.0"
+buttonLabel "Backlight Out"
+numCmds 1
+command {
+  0 "caput BL24I-MO-BL-01:MP:SELECT Out"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 5
+y 364
+w 160
+h 80
+fgColor index 14
+bgColor index 38
+topShadowColor index 35
+botShadowColor index 35
+font "helvetica-bold-r-18.0"
+buttonLabel "RT Collect"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Pin rt_data_collection"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 5
+y 444
+w 160
+h 80
+fgColor index 14
+bgColor index 38
+topShadowColor index 35
+botShadowColor index 35
+font "helvetica-bold-r-18.0"
+buttonLabel "RT Mount"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Pin rt_hand_mount"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 0
+w 160
+h 80
+lineColor index 40
+fill
+fillColor index 41
+visPv "BL24I-MO-CSTRM-01:P1701:RBV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 0
+w 480
+h 80
+lineColor index 63
+fill
+fillColor index 28
+visPv "BL24I-MO-TTAB-01:X.RBV"
+visMin "2"
+visMax "100"
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 59
+y 10
+w 368
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 48
+bgColor index 0
+useDisplayBg
+visPv "BL24I-MO-TTAB-01:X.RBV"
+visMin "2"
+visMax "100"
+value {
+  "DO NOT TOUCH THIS BUTTON"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 91
+y 40
+w 296
+h 27
+font "helvetica-bold-r-24.0"
+fgColor index 48
+bgColor index 0
+useDisplayBg
+visPv "BL24I-MO-TTAB-01:X.RBV"
+visMin "2"
+visMax "100"
+value {
+  "[ WHILE IN TRAY MODE ]"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 8
+y 684
+w 60
+h 160
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-24.0"
+buttonLabel "+"
+numCmds 1
+command {
+  0 "caput BL24I-MO-HGON-01:TRAYZS.TWF 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 70
+y 684
+w 60
+h 160
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-24.0"
+buttonLabel "-"
+numCmds 1
+command {
+  0 "caput BL24I-MO-HGON-01:TRAYZS.TWR 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 6
+y 603
+w 180
+h 80
+fgColor index 38
+bgColor index 28
+topShadowColor index 49
+botShadowColor index 49
+font "helvetica-bold-r-18.0"
+buttonLabel "Tray Robot Load"
+numCmds 1
+command {
+  0 "python /dls_sw/i24/scripts/mode_change.py Tray robot_load"
+}
+endObjectProperties
+
