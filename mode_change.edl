@@ -84,7 +84,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Pin Hand Mount"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Pin hand_mount"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Pin hand_mount"
 }
 endObjectProperties
 
@@ -106,7 +106,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Pin Data Collect"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Pin data_collection"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Pin data_collection"
 }
 endObjectProperties
 
@@ -128,7 +128,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Tray Data Collect"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Tray data_collection"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Tray data_collection"
 }
 endObjectProperties
 
@@ -150,7 +150,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Tray Hand Mount"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Tray hand_mount"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Tray hand_mount"
 }
 endObjectProperties
 
@@ -172,7 +172,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Switch To Pin"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Pin switch"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Pin switch"
 }
 endObjectProperties
 
@@ -194,7 +194,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Switch to Tray"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Tray switch"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Tray switch"
 }
 endObjectProperties
 
@@ -408,7 +408,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "RT Collect"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Pin rt_data_collection"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Pin rt_data_collection"
 }
 endObjectProperties
 
@@ -430,7 +430,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "RT Mount"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Pin rt_hand_mount"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Pin rt_hand_mount"
 }
 endObjectProperties
 
@@ -578,7 +578,7 @@ font "helvetica-bold-r-18.0"
 buttonLabel "Tray Robot Load"
 numCmds 1
 command {
-  0 "python /dls_sw/i24/scripts/mode_change.py Tray robot_load"
+  0 "python /dls_sw/i24/scripts/modechange/mode_change.py Tray robot_load"
 }
 endObjectProperties
 
